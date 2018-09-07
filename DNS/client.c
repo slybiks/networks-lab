@@ -34,6 +34,7 @@ int main() {
      
     sendto(sockfd,filename,strlen(filename), MSG_CONFIRM, (const struct sockaddr *) &servaddr,sizeof(servaddr));
     n = recvfrom(sockfd,contents,sizeof(contents), MSG_WAITALL,(struct sockaddr *)&servaddr,&len);
+    printf("%s\n",contents);
     return 0;
 
 }
