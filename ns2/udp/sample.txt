@@ -1,1 +1,3 @@
 Topogies - UDP
+Run :
+ns <filename.tcl>
